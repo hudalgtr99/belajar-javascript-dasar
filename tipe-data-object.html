@@ -15,16 +15,20 @@
         // person["alamat"] = "Indonesia";
         // person["umur"] = 22;
 
-        const person = {
+        const orang = {
             "nama lengkap" : "Miftahul Huda Guntara",
             alamat : "Indonesia",
             umur : 22
         };
 
-        console.table(person);
+        console.info(`Nama : ${orang.nama}`);
+        console.info(`Alamat : ${orang.alamat}`);
+        console.info(`Umur : ${orang.umur}`);
 
-        delete person["umur"];
-        console.table(person);
+        console.table(orang);
+
+        delete orang["umur"];
+        console.table(orang);
 
     </script>
 </body>
