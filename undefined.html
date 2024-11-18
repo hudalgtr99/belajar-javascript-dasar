@@ -8,12 +8,30 @@
 <body>
     <script>
 
-        let name = "A";
+        // DEFINED
+        // let name = "A"; 
 
+        // let name = undefined; //UNDEFINED
+
+        let name; //UNDEFINED
         if (name === undefined) {
-            alert("UNDEFINED");
+            console.info("UNDEFINED");
         } else {
-            alert("DEFINED");
+            console.info("DEFINED");
+        }
+
+        const names = ["Miftahul", "Huda"];
+        if (names[2] === undefined) {   
+            console.info("ARRAY UNDEFINED");
+        } else {
+            console.info("ARRAY DEFINED");
+        }
+
+        const person = {};
+        if (person.name === undefined) {
+            console.info("OBJECT UNDEFINED");
+        } else {
+            console.info("Object DEFINED");
         }
 
     </script>
