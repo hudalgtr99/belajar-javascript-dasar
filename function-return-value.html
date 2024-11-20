@@ -8,7 +8,13 @@
 <body>
     <script>
 
-        
+        function sayHello(firstName, lastName){
+            const say = `Hello ${firstName} ${lastName}`;
+            return say;
+        }
+
+        const result = sayHello("Miftahul", "Huda");
+        document.writeln(`<p>${result}</p>`);
 
     </script>
 </body>
