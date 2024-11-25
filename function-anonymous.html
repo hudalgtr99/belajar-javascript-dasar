@@ -8,7 +8,23 @@
 <body>
     <script>
 
-        
+        const say = function(name){
+            document.writeln(`<p>Hello ${name}</p>`);
+        }
+
+        say("Miftah");
+        say("Huda");
+
+        function giveMeName(callback){
+            callback("Miftah");
+        }
+
+        giveMeName(say);
+
+        //Anonymous Function hanya bisa dibpakai sekali
+        giveMeName(function(name){
+            document.writeln(`<p>Hi ${name}</p>`);
+        });
 
     </script>
 </body>
