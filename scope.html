@@ -29,7 +29,15 @@
 
         function first(){
             // local scope first
-            let firstVariable = "First"; 
+            let firstVariable = "First";
+
+            function firstNested(){
+                console.info(firstVariable);
+                const firstNestedVariable = "First Nested";
+            }
+
+            firstNested();
+            // console.info(firstNestedVariable); //ERROR
         }
 
         function second(){
@@ -45,7 +53,7 @@
         // console.info(firstVariable); //ERROR
         // console.info(secondVariable); //ERROR
 
-        
+
 
 
     </script>
