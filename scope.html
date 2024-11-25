@@ -27,6 +27,25 @@
 
         console.info(counter);
 
+        function first(){
+            //local scope first
+            let firstVariable = "First"; 
+        }
+
+        function second(){
+            //local scope second
+            let secondVariable = "Second";
+            console.info(firstVariable); //ERROR karna beda scope
+        }
+
+        first();
+        second();
+
+        //global scope
+        console.info(firstVariable); //ERROR
+        console.info(secondVariable); //ERROR
+
+
     </script>
 </body>
 </html>
