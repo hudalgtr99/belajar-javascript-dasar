@@ -34,6 +34,18 @@
 
         console.info(sum(100, 100));
 
+        function giveMeName(callback){
+            callback("Miftah");
+        }
+
+        // //Anonymous Function Sebagai parameter
+        // giveMeName(function(name){
+        //     console.info(`Hello ${name}`);
+        // })
+
+        //Arrow Function Sebagai Parameter
+        giveMeName(name => console.info(`Hello ${name}`));
+
     </script>
 </body>
 </html>
