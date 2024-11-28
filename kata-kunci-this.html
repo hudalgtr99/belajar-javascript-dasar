@@ -16,11 +16,20 @@
             function inner(){
                 console.info(this);
             }
-            
+
             inner();
         }
 
         sample();
+
+        const person = {
+            name: "Miftah",
+            sayHello: function (name){
+                console.info(this);
+            }
+        };
+
+        person.sayHello("Huda");
 
     </script>
 </body>
