@@ -8,7 +8,19 @@
 <body>
     <script>
 
-        
+        console.info(this); //Window
+
+        function sample(){
+            console.info(this);
+
+            function inner(){
+                console.info(this);
+            }
+            
+            inner();
+        }
+
+        sample();
 
     </script>
 </body>
