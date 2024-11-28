@@ -8,12 +8,21 @@
 <body>
     <script>
 
+        // // Cara Pertama
+        // const person = {
+        //     name: "Miftah",
+        //     sayHello: function (name){
+        //         alert(`Hello ${name}`);
+        //     }
+        // };
+
+        // Cara Kedua
         const person = {
-            name: "Miftah",
-            sayHello: function (name){
-                alert(`Hello ${name}`);
-            }
+            name: "Miftah"
         };
+        person.sayHello = function(name){
+            alert(`Hello ${name}`);
+        }
 
         person.sayHello("Huda");
 
