@@ -20,10 +20,11 @@
             console.info(name);
         }
 
-        // versi kompleks
+        // versi kompleks (lazy function)
         function* buatGanjil(value){
             for (let i = 1; i <= value; i++){
                 if (i % 2 === 1){
+                    console.info(`Yield ${i}`);
                     yield i;
                 }
             }
@@ -33,6 +34,27 @@
         for (const angka of angkaGanjil){
             consol.info(angka);
         } 
+
+        // //versi array (eager function)
+        // function* buatGanjilArray(value){
+        //     const result = [];
+        //     for (let i = 1; i <= value; i++){
+        //         if (i % 2 === 1){
+        //             console.info(`Yield ${i}`);
+        //             result.push(i);
+        //         }
+        //     }
+        //     return result;
+        // }
+
+        // const numbers = buatGanjilArray(100);
+        // for (const number of numbers){
+        //     consol.info(number);
+        // } 
+
+        // Hasil output array akan yield terus sampai 100, baru mengeluarkan nilai
+        // Hasil output Generator akan bergantian, yield > angka > yield > angka.. dst
+
 
     </script>
 </body>
