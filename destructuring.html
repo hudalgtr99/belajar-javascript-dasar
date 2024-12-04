@@ -39,9 +39,12 @@
                 channel: "Channel-channelan"
             };
             
-            const {firstName, lastName} = person;
+            //Destructuring
+            const {firstName, lastName, address, ...others} = person;
             console.info(firstName);
             console.info(lastName);
+            console.info(address);
+            console.info(others);
         }
 
 
