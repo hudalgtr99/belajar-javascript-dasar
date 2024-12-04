@@ -76,6 +76,22 @@
             displayPerson(person);
         }
 
+        //Block scope 4
+        {
+            // //Tanpa Destructuring
+            // function sum(array){
+            //     return array[0] + array[1];
+            // }
+
+            //Dengan Destructuring
+            function sum([first, second]){
+                return first + second;
+            }
+
+            console.info(sum([1,1]));
+            console.info(sum([10,10]));
+        }
+
 
 
     </script>
