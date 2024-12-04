@@ -116,6 +116,22 @@
             console.info(lastName);
         }
 
+        //Block scope 7
+        {
+            const person = {
+                firstName: "Miftahul",
+                middleName: "Huda",
+                lastName: "Guntara"
+            };
+            
+            const {firstName: namaDepan, 
+                middleName: namaTengah = "Jannah", 
+                lastName: namaBelakang} = person;  //Menggunakan nama variabel lain
+            console.info(namaDepan);
+            console.info(namaTengah);
+            console.info(namaBelakang);
+        }
+
 
     </script>
 </body>
