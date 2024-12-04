@@ -24,12 +24,14 @@
 
         const person = {
             name: "Miftah",
-            sayHello: function (name){
-                console.info(this);
+            sayHello: function (value){
+                //This disini mengambil value name dari object person
+                console.info(`Hello ${value} My Name is ${this.name}`);
             }
         };
 
         person.sayHello("Huda");
+        person.sayHello("Guntara");
 
     </script>
 </body>
