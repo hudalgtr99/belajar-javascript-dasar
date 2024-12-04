@@ -8,7 +8,7 @@
 <body>
     <script>
 
-        //scope 1
+        //Block scope 1
         {
             const names = ["Miftahul", "Huda", "Guntara", "Budi", "Joko"];
             // //cara lama
@@ -25,7 +25,7 @@
             console.info(others);
         }
 
-        //scope 2
+        //Block scope 2
         {
             const person = {
                 firstName: "Miftahul",
@@ -49,6 +49,31 @@
             console.info(city);
             console.info(country);
             console.info(others);
+        }
+
+        //Block scope 3
+        {
+            // //Tanpa Destructuring
+            // function displayPerson(person){
+            //     console.info(person.firstName);
+            //     console.info(person.middleName);
+            //     console.info(person.lastName);
+            // };
+
+            //Memakai Destructuring
+            function displayPerson({firstName, middleName, lastName}){
+                console.info(firstName);
+                console.info(middleName);
+                console.info(lastName);
+            };
+
+            const person = {
+                firstName: "Miftahul",
+                middleName: "Huda",
+                lastName:  "Guntara"
+            };
+
+            displayPerson(person);
         }
 
 
