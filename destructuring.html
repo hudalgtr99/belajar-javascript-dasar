@@ -102,6 +102,20 @@
             console.info(lastName);
         }
 
+        //Block scope 6
+        {
+            const person = {
+                firstName: "Miftahul",
+                middleName: "Huda",
+                lastName: "Guntara"
+            };
+            
+            const {firstName, middleName = "Jannah", lastName} = person;  //Default Value dari Destucturing Object
+            console.info(firstName);
+            console.info(middleName);
+            console.info(lastName);
+        }
+
 
     </script>
 </body>
