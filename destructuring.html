@@ -40,10 +40,14 @@
             };
             
             //Destructuring
-            const {firstName, lastName, address: {street, city, country}, ...others} = person;
+            // const {firstName, lastName, address, ...others} = person; // Tanpa nested di address
+            const {firstName, lastName, address: {street, city, country}, ...others} = person; //Dengan nested di address
             console.info(firstName);
             console.info(lastName);
-            console.info(address);
+            // console.info(address); tidak bisa digunakan lagi karena sudah dibuat nested
+            console.info(street);
+            console.info(city);
+            console.info(country);
             console.info(others);
         }
 
