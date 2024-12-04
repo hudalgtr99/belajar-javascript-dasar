@@ -92,6 +92,15 @@
             console.info(sum([10,10]));
         }
 
+        //Block scope 5
+        {
+            const names = ["Miftahul", "Jannah"]; //Jannah menggantikan default nilai dari Huda
+            const [firstName, middleName = "Huda", lastName = "Guntara"] = names; //Menggunakan default value
+
+            console.info(firstName);
+            console.info(middleName);
+            console.info(lastName);
+        }
 
 
     </script>
