@@ -40,7 +40,7 @@
             };
             
             //Destructuring
-            const {firstName, lastName, address, ...others} = person;
+            const {firstName, lastName, address: {street, city, country}, ...others} = person;
             console.info(firstName);
             console.info(lastName);
             console.info(address);
