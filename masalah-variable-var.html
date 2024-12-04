@@ -8,7 +8,25 @@
 <body>    
     <script>
 
-        
+        //Global Scope
+        let i = 20;
+
+        for (let i = 0; i < 10; i++){
+            //Local Scope
+            console.info(`Local ${i}`);
+        } //i = 0-9
+
+        console.info(`Global ${i}`);
+
+        //Global Scope
+        var j = 20;
+
+        for (var j = 0; j < 10; j++){
+            //Local Scope
+            console.info(`Local ${j}`);
+        } //j = 0-9
+
+        console.info(`Global ${j}`); //j = 10 (bukan j = 20) karna melanjutkan 9
 
     </script>
 </body>
