@@ -8,34 +8,46 @@
 <body>
     <script>
 
-        const names = ["Miftahul", "Huda", "Guntara", "Budi", "Joko"];
-        // //cara lama
-        // const firstName = names[0];
-        // const middleName = names [1];
-        // const lastName = names[2];
+        //scope 1
+        {
+            const names = ["Miftahul", "Huda", "Guntara", "Budi", "Joko"];
+            // //cara lama
+            // const firstName = names[0];
+            // const middleName = names [1];
+            // const lastName = names[2];
 
-        // Destructuring Array
-        const [firstName, middleName, lastName, ...others] = names;
+            // Destructuring Array
+            const [firstName, middleName, lastName, ...others] = names;
 
-        console.info(firstName);
-        console.info(middleName);
-        console.info(lastName);
-        console.info(others);
+            console.info(firstName);
+            console.info(middleName);
+            console.info(lastName);
+            console.info(others);
+        }
 
-        const person = {
-            firstName: "Miftahul",
-            lastName: "Huda",
-            address: {
-                street: "Jalan-jalan",
-                city: "Kota-kotaan",
-                country: "Konoha"
-            },
-            hobby: "Game",
-            channel: "Channel-channelan"
-        };
+        //scope 2
+        {
+            const person = {
+                firstName: "Miftahul",
+                lastName: "Huda",
+                address: {
+                    street: "Jalan-jalan",
+                    city: "Kota-kotaan",
+                    country: "Konoha"
+                },
+                hobby: "Game",
+                channel: "Channel-channelan"
+            };
+            
+            const {firstName, lastName} = person;
+            console.info(firstName);
+            console.info(lastName);
+        }
 
-        
+
 
     </script>
 </body>
 </html>
+
+<!-- Pembedaan scope agar tidak terjadi error ketika deklarasi ulang -->
