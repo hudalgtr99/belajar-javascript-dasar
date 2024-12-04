@@ -11,10 +11,26 @@
         const person = {
             firstName: "Miftahul",
             lastName: "Huda",
-            fullName: function (){
-                return `${this.firstName} ${this.lastName}`
+
+            get fullName(){
+                return `${this.firstName} ${this.lastName}`;
+            },
+
+            // //Ini pemanggilan berupa function
+            // fullName: function (){
+            //     return `${this.firstName} ${this.lastName}`
+            // }
+
+            set fullName(value){
+                console.info(`Ubah Full Name ${value}`);
             }
-        }
+        };
+
+        person.firstName = "Miftah";
+        
+        // //Ini pemanggilannya berpa function, bukan berupa attribute
+        // console.info(person,fullName());
+
 
     </script>
 </body>
