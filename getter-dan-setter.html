@@ -22,13 +22,20 @@
             // }
 
             set fullName(value){
-                console.info(`Ubah Full Name ${value}`);
+                const array = value.split(" ");
+                this.firstName = array[0];
+                this.lastName = array[1];
             }
         };
 
         person.fullName = "Rushia Lathifa";
+        console.table(person);
 
-        person.firstName = "Miftah";
+        person.fullName = "Lathifa Syifa";
+        console.table(person);
+
+        person.fullName = "Miftahul Huda";
+        console.table(person);
         
         // //Ini pemanggilannya berpa function, bukan berupa attribute
         // console.info(person,fullName());
